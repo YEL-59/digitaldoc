@@ -48,7 +48,7 @@ export default function PersonalTrainerGrid() {
           return (
             <div
               key={index}
-              className="flex flex-col sm:flex-row items-center bg-gray-100 rounded-lg shadow-sm overflow-hidden px-4 py-4 max-w-md w-full border border-[#DBE1E5] mx-auto"
+              className="flex flex-col sm:flex-row items-center bg-[#0053CF]/10 rounded-lg shadow-sm overflow-hidden px-4 py-4 max-w-md w-full border border-[#DBE1E5] mx-auto"
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
