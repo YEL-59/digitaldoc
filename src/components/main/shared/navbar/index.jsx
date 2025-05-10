@@ -37,7 +37,7 @@ const Navbar = () => {
     <>
       {/* Top CTA Bar */}
       <div className="hidden md:flex justify-center items-center bg-primary p-3 text-center">
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-2">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <h2 className="text-white font-roboto text-[12px] font-normal">
             Join CoPT Today and Gain Clients From Around The UK
           </h2>

@@ -39,7 +39,7 @@ const Howitwork = () => {
       <div>
         <div>
           <div>
-            <h1 className="text-textmain text-center font-roboto text-[48px] not-italic font-bold leading-normal">
+            <h1 className="text-textmain text-center font-roboto text-3xl md:text-[48px] not-italic font-bold leading-normal">
               How Does It Work
             </h1>
 
@@ -51,7 +51,7 @@ const Howitwork = () => {
           </div>
 
           <div className="py-12">
-            <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-3 md:p-0">
               {steps.map((step, index) => (
                 <Card
                   key={step.id}
