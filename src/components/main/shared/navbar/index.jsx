@@ -90,6 +90,10 @@ const Navbar = () => {
             <Button className="bg-transparent text-white font-roboto text-[16px] border border-white px-5 py-3 hover:border-[#6049bc]">
               Find PTs
             </Button>
+            <Button className="bg-transparent">
+              {" "}
+              <Menu />
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
