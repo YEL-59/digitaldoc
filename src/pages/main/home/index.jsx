@@ -1,3 +1,4 @@
+import BlogSection from "@/components/main/blog";
 import Council from "@/components/main/council";
 import FAQSection from "@/components/main/faq";
 
@@ -16,6 +17,7 @@ const Home = () => {
         <Council />
         <PersonalTrainerGrid />
         <FAQSection />
+        <BlogSection />
       </div>
     </>
   );
