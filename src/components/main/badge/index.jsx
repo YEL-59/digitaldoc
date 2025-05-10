@@ -12,7 +12,7 @@ const Badge = () => {
           Sign up for The Council of Personal Trainers
         </h1>
 
-        <div className="flex flex-col gap-4 items-center">
+        <div className="flex flex-col md:flex-row gap-4 items-center">
           <Button className="bg-[#333] text-white w-full sm:w-auto">
             Sign In
           </Button>
