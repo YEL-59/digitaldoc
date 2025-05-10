@@ -1,4 +1,6 @@
 import Council from "@/components/main/council";
+import FAQSection from "@/components/main/faq";
+
 import Hero from "@/components/main/hero";
 import Howitwork from "@/components/main/howitwork";
 import PersonalTrainerGrid from "@/components/main/personaltrainer";
@@ -13,6 +15,7 @@ const Home = () => {
         <Howitwork />
         <Council />
         <PersonalTrainerGrid />
+        <FAQSection />
       </div>
     </>
   );
