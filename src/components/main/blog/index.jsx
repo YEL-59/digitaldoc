@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import blogImg from "../../../assets/blog.png";
 import { Button } from "@/components/ui/button";
 
@@ -37,9 +38,12 @@ export default function BlogSection() {
             Latest from the Personal Trainer Blog Archive
           </p>
         </div>
-        <Button className="bg-primary hover:bg-blue-700 text-white text-sm px-10">
-          See All
-        </Button>
+        <Link to="https://copt.org.uk/blogs">
+          {" "}
+          <Button className="bg-primary hover:bg-blue-700 text-white text-sm px-10">
+            See All
+          </Button>
+        </Link>
       </div>
 
       <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-3 md:p-0">
@@ -60,12 +64,15 @@ export default function BlogSection() {
               <p className="text-[#5C5C5C] font-dosis text-base font-normal leading-normal mt-2">
                 {post.description}
               </p>
-              <Button
-                variant="outline"
-                className="mt-4 text-blue-600 border-blue-600 hover:bg-blue-600 hover:text-white"
-              >
-                Read More
-              </Button>
+              <Link to="https://copt.org.uk/blogs">
+                {" "}
+                <Button
+                  variant="outline"
+                  className="mt-4 text-blue-600 border-blue-600 hover:bg-blue-600 hover:text-white"
+                >
+                  Read More
+                </Button>
+              </Link>
             </div>
           </div>
         ))}
