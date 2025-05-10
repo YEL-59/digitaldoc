@@ -13,12 +13,24 @@ const Home = () => {
     <>
       <div>
         <Hero />
+
         <Trainer />
         <Howitwork />
-        <Council />
-        <PersonalTrainerGrid />
-        <FAQSection />
-        <BlogSection />
+        <div id="about">
+          <Council />
+        </div>
+
+        <div id="personaltrainer">
+          <PersonalTrainerGrid />
+        </div>
+
+        <div id="faq">
+          <FAQSection />
+        </div>
+        <div id="blogs">
+          <BlogSection />
+        </div>
+
         <Badge />
       </div>
     </>
