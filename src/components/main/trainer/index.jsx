@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router";
 
 const Trainer = () => {
   return (
@@ -45,9 +46,12 @@ const Trainer = () => {
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              <Button className="py-[10px] text-white text-center font-roboto text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-normal">
-                Find your Personal Trainer today
-              </Button>
+              <Link to="https://copt.org.uk/for-personal-trainers">
+                {" "}
+                <Button className="py-[10px] text-white text-center font-roboto text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-normal">
+                  Find your Personal Trainer today
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router";
 
 const Howitwork = () => {
   const steps = [
@@ -78,9 +79,12 @@ const Howitwork = () => {
               ))}
             </div>
             <div className="flex justify-center items-center py-10">
-              <Button className="text-center font-roboto text-[18px] not-italic rounded-lg font-normal leading-[normal]">
-                Get Quotes from Personal Trainers near you
-              </Button>
+              <Link to="https://copt.org.uk/for-personal-trainers">
+                {" "}
+                <Button className="text-center font-roboto text-[18px] not-italic rounded-lg font-normal leading-[normal]">
+                  Get Quotes from Personal Trainers near you
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

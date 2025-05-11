@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router";
 
 const Badge = () => {
   return (
@@ -13,12 +14,18 @@ const Badge = () => {
         </h1>
 
         <div className="flex flex-col md:flex-row gap-4 items-center">
-          <Button className="bg-[#333] text-white w-full sm:w-auto">
-            Sign In
-          </Button>
-          <Button className="border border-white text-white w-full sm:w-auto">
-            Find Out More
-          </Button>
+          <Link to="https://copt.org.uk/join-lpt-fresh">
+            <Button className="bg-[#333] text-white w-full sm:w-auto hover:bg-[#333] cursor-pointer">
+              Sign Up
+            </Button>
+          </Link>
+
+          <Link to="https://copt.org.uk/about">
+            {" "}
+            <Button className="border border-white text-white w-full sm:w-auto cursor-pointer">
+              Find Out More
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
