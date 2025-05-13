@@ -4,16 +4,24 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Link, useLocation } from "react-router";
 import logo from "../../../../assets/logo.png";
 import Menu from "@/assets/menu";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuLabel,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+} from "@/components/ui/dropdown-menu";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
   const list = [
-    { label: "About Us", to: "#features" },
-    { label: "Find a Personal Trainer", to: "#personaltrainer" },
-    { label: "Blog", to: "#blogs" },
-    { label: "Faq", to: "#faq" },
+    { label: "About Us", to: "https://copt.org.uk/about" },
+    { label: "Find a Personal Trainer", to: "https://copt.org.uk/pt-listings" },
+    { label: "Blog", to: "https://copt.org.uk/blogs" },
+    { label: "Faq", to: "https://copt.org.uk/personal-trainer-faqs" },
   ];
 
   const [isSticky, setIsSticky] = useState(false);
@@ -82,18 +90,66 @@ const Navbar = () => {
             })}
           </ul>
 
-          {/* Desktop Buttons */}
-          <div className="hidden md:flex gap-4">
-            <Button className="bg-primary text-white font-roboto text-[18px] px-5 py-3 border-0">
-              For PTs
-            </Button>
-            <Button className="bg-transparent text-white font-roboto text-[16px] border border-white px-5 py-3 hover:border-[#6049bc]">
-              Find PTs
-            </Button>
-            <Button className="bg-transparent">
+          <div className="hidden md:flex gap-4 items-center">
+            <Link to="https://copt.org.uk/for-personal-trainers">
               {" "}
-              <Menu />
-            </Button>
+              <Button className="bg-primary text-white font-roboto text-[18px] px-5 py-3 border-0">
+                For PTs
+              </Button>
+            </Link>
+            <Link to="https://copt.org.uk/pt-listings">
+              {" "}
+              <Button className="bg-transparent text-white font-roboto text-[16px] border border-white px-5 py-3 hover:border-[#6049bc]">
+                Find PTs
+              </Button>
+            </Link>
+
+            {/* Dropdown Menu - Desktop Only */}
+            <div className="hidden md:block">
+              <DropdownMenu className="z-[10002]">
+                <DropdownMenuTrigger asChild>
+                  <Button className="bg-transparent text-white">
+                    <Menu />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="w-64 bg-white text-black">
+                  <DropdownMenuItem asChild>
+                    <Link to="/"></Link>
+                  </DropdownMenuItem>
+
+                  <DropdownMenuItem asChild className="mt-2">
+                    <Link to="https://copt.org.uk/how-to-find-a-local-personal-trainer">
+                      How to choose a Personal Trainer
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link to="https://copt.org.uk/contact">Contact Us</Link>
+                  </DropdownMenuItem>
+
+                  <DropdownMenuLabel>For PTs</DropdownMenuLabel>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem asChild>
+                    <Link to="https://copt.org.uk/login">Sign in</Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link to="https://copt.org.uk/join-lpt-fresh">
+                      Register Here
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link to="https://copt.org.uk/reasons-to-register">
+                      Why Register with CoPT?
+                    </Link>
+                  </DropdownMenuItem>
+                  {/* <DropdownMenuItem asChild>
+                    <Link to="/faq">Personal Trainer FAQs</Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link to="/blog">Blog</Link>
+                  </DropdownMenuItem> */}
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -108,7 +164,7 @@ const Navbar = () => {
                 side="left"
                 className="w-[85%] sm:w-64 p-6 bg-[#0D0D0D] text-white z-[1001]"
               >
-                <div className="flex flex-col space-y-6 mt-6">
+                <div className="flex flex-col space-y-4 mt-6 text-white">
                   {list.map((item, i) => (
                     <Link
                       key={i}
@@ -123,7 +179,79 @@ const Navbar = () => {
                       {item.label}
                     </Link>
                   ))}
+                  {/* Top-level Pages */}
+                  <Link
+                    to="/"
+                    onClick={() => setIsOpen(false)}
+                    className="text-[16px]"
+                  >
+                    Home
+                  </Link>
+                  <Link
+                    to="/find"
+                    onClick={() => setIsOpen(false)}
+                    className="text-[16px]"
+                  >
+                    Find a Personal Trainer
+                  </Link>
+                  <Link
+                    to="/how-to-choose"
+                    onClick={() => setIsOpen(false)}
+                    className="text-[16px]"
+                  >
+                    How to choose a Personal Trainer
+                  </Link>
+                  <Link
+                    to="/contact"
+                    onClick={() => setIsOpen(false)}
+                    className="text-[16px]"
+                  >
+                    Contact Us
+                  </Link>
+
+                  {/* For PTs Section */}
+                  <div className="mt-4">
+                    <h4 className="font-semibold text-[15px] mb-2">For PTs</h4>
+                    <div className="flex flex-col gap-2 pl-3">
+                      <Link
+                        to="/signin"
+                        onClick={() => setIsOpen(false)}
+                        className="text-[15px]"
+                      >
+                        Sign in
+                      </Link>
+                      <Link
+                        to="/register"
+                        onClick={() => setIsOpen(false)}
+                        className="text-[15px]"
+                      >
+                        Register Here
+                      </Link>
+                      <Link
+                        to="/why-register"
+                        onClick={() => setIsOpen(false)}
+                        className="text-[15px]"
+                      >
+                        Why Register with CoPT?
+                      </Link>
+                      <Link
+                        to="/faq"
+                        onClick={() => setIsOpen(false)}
+                        className="text-[15px]"
+                      >
+                        Personal Trainer FAQs
+                      </Link>
+                      <Link
+                        to="/blog"
+                        onClick={() => setIsOpen(false)}
+                        className="text-[15px]"
+                      >
+                        Blog
+                      </Link>
+                    </div>
+                  </div>
                 </div>
+
                 <div className="mt-10 flex flex-col gap-4">
                   <Button className="bg-primary w-full text-white font-roboto text-[16px]">
                     For PTs

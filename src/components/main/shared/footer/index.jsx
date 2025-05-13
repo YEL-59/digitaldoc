@@ -1,6 +1,7 @@
 import flogo from "../../../../assets/logo.png";
 import flogo1 from "../../../../assets/gvtb.png";
 import flogo2 from "../../../../assets/gvtb1.png";
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
@@ -26,14 +27,20 @@ const Footer = () => {
             </h3>
             <ul className="space-y-4 py-5 text-[#E8E8E8] font-open-sans text-base font-normal leading-none">
               <li>
-                <a href="#" className="hover:underline">
+                <Link
+                  to="https://copt.org.uk/pt-listings"
+                  className="hover:underline"
+                >
                   Personal Trainer Search
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <Link
+                  to="https://copt.org.uk/for-personal-trainers"
+                  className="hover:underline"
+                >
                   How to choose a PT
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -45,14 +52,20 @@ const Footer = () => {
             </h3>
             <ul className="space-y-4 py-5 text-[#E8E8E8] font-open-sans text-base font-normal leading-none">
               <li>
-                <a href="#" className="hover:underline">
+                <Link
+                  to="https://copt.org.uk/reasons-to-register"
+                  className="hover:underline"
+                >
                   Why Register with CoPT?
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <Link
+                  to="https://copt.org.uk/for-personal-trainers/how-to-open-a-gym"
+                  className="hover:underline"
+                >
                   How to open a gym
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -64,19 +77,30 @@ const Footer = () => {
             </h3>
             <ul className="space-y-4 py-5 text-[#E8E8E8] font-open-sans text-base font-normal leading-none mb-4">
               <li>
-                <a href="#" className="hover:underline">
+                <Link
+                  to="https://copt.org.uk/about"
+                  className="hover:underline"
+                >
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <Link
+                  to="https://copt.org.uk/contact"
+                  className="hover:underline"
+                >
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
             <div className="flex justify-center md:justify-start space-x-4">
-              <img src={flogo1} alt="Google Reviews" className="h-12" />
-              <img src={flogo2} alt="Trustpilot" className="h-12" />
+              <Link to="https://www.google.com/search?q=leading+personal+trainers+reviews">
+                {" "}
+                <img src={flogo1} alt="Google Reviews" className="h-12" />
+              </Link>
+              <Link to="https://uk.trustpilot.com/review/leadingpersonaltrainers.com">
+                <img src={flogo2} alt="Trustpilot" className="h-12" />
+              </Link>
             </div>
           </div>
         </div>
