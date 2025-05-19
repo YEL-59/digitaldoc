@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { Button } from "@/components/ui/button";
 import person1 from "../../../assets/person1.png";
+import { Link } from "react-router";
 
 const trainers = [
   {
@@ -89,9 +90,12 @@ export default function PersonalTrainerGrid() {
       </div>
 
       <div className="mt-10 text-center" data-aos="fade-up">
-        <Button variant="default" className="bg-blue-600 hover:bg-blue-700">
-          See All Professional
-        </Button>
+        <Link to="https://copt.org.uk/pt-listings">
+          {" "}
+          <Button variant="default" className="bg-blue-600 hover:bg-blue-700">
+            See All Professional
+          </Button>
+        </Link>
       </div>
     </div>
   );

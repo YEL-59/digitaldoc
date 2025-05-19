@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import councilbg from "../../../assets/councilbg.png";
+import { Link } from "react-router";
 
 const Council = () => {
   return (
@@ -50,9 +51,12 @@ const Council = () => {
               CPD. Together, we can build a more regulated, respected and
               professional industry.
             </p>
-            <Button className="text-white font-roboto text-[18px] font-normal leading-none">
-              See More About Us
-            </Button>
+            <Link to="https://copt.org.uk/about">
+              {" "}
+              <Button className="text-white font-roboto text-[18px] font-normal leading-none">
+                See More About Us
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
