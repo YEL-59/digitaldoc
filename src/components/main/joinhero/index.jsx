@@ -22,13 +22,13 @@ const Joincpt = () => {
               with the UK's leading professional registry
             </p>
             <div
-              className="flex  items-start gap-3 justify-start cursor-pointer"
+              className="flex  items-start gap-3 justify-start "
               data-aos="fade-up"
               data-aos-delay="300"
             >
               <Link to="/membership">
                 {" "}
-                <button className="bg-primary hover:bg-blue-700 font-roboto flex gap-2 text-white px-6 py-3 rounded w-full sm:w-auto">
+                <button className="bg-primary hover:bg-blue-700 font-roboto flex gap-2 text-white px-6 py-3 rounded w-full sm:w-auto cursor-pointer">
                   Become a Member – Only £34/year <Joinsvg />
                 </button>
               </Link>

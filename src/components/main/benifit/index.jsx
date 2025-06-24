@@ -31,7 +31,7 @@ const Benifit = () => {
   return (
     <>
       <div className="py-10 md:py-30 p-5 md:p-0">
-        <div className="container mx-auto flex flex-col lg:flex-row items-start justify-evenly gap-10">
+        <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center lg:items-start lg:justify-evenly gap-10">
           <div>
             <div data-aos="fade-right">
               <h1 className="text-[#333] font-roboto text-[30px] text-center md:text-start md:text-[48px] font-bold leading-[72px]">

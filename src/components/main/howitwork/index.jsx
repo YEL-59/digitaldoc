@@ -51,7 +51,7 @@ const Howitwork = () => {
             </p>
           </div>
 
-          <div className="py-12">
+          <div className="py-12 p-5 lg:p-0">
             <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-3 md:p-0">
               {steps.map((step, index) => (
                 <Card

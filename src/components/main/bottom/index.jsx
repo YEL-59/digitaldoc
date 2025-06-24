@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import img from "../../../assets/bottom.png";
 import Joinsvg from "@/assets/joinsvg";
+import { Link } from "react-router";
 
 const Bottom = () => {
   return (
@@ -9,7 +10,7 @@ const Bottom = () => {
       style={{ backgroundImage: `url(${img})` }}
     >
       {/* Content */}
-      <div className="relative  container mx-auto ml-80 text-start space-y-6 overflow-hidden">
+      <div className="relative  container mx-auto lg:ml-80 text-start space-y-6 overflow-hidden">
         <button className="bg-white/10 hover:bg-blue-700 hover:border-2 font-roboto text-white px-6 py-3 rounded w-full sm:w-auto">
           Join the Elite Community
         </button>
@@ -21,9 +22,12 @@ const Bottom = () => {
           their career development and business growth
         </p>
         <div className="flex justify-start gap-5 flex-wrap">
-          <button className="bg-white hover:bg-blue-700 hover:border-2 font-roboto flex gap-2 text-black px-6 py-3 rounded w-full sm:w-auto">
-            Become a Member – Only £34/year <Joinsvg />
-          </button>
+          <Link to="/membership">
+            {" "}
+            <button className="bg-white hover:bg-blue-700 hover:border-2 cursor-pointer font-roboto flex gap-2 text-black hover:text-white px-6 py-3 rounded w-full sm:w-auto">
+              Become a Member – Only £34/year <Joinsvg />
+            </button>
+          </Link>
         </div>
       </div>
     </div>

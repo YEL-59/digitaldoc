@@ -29,7 +29,7 @@ const blogPosts = [
 export default function BlogSection() {
   return (
     <section className="container mx-auto py-20 bg-white">
-      <div className="flex flex-col md:flex-row gap-5 justify-between items-center mb-5 md:mb-12 p-3 md:p-0">
+      <div className="flex flex-col md:flex-row gap-5 justify-between items-center mb-5 md:mb-12 p-3 lg:p-0">
         <div>
           <h2 className="text-[30px] md:text-[48px] text-center md:text-start font-bold text-textmain font-roboto">
             Latest Blog Archive
@@ -46,7 +46,7 @@ export default function BlogSection() {
         </Link>
       </div>
 
-      <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-3 md:p-0">
+      <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-3 lg:p-0">
         {blogPosts.map((post) => (
           <div
             key={post.id}
