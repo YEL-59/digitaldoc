@@ -18,6 +18,7 @@ import {
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { FaCreditCard, FaPaypal, FaLock } from "react-icons/fa";
+import bg from "../../../assets/faqbg.png";
 
 const Membership = () => {
   const form = useForm({
@@ -52,9 +53,9 @@ const Membership = () => {
   //     { label: "Remind me before 15 Minutes", value: "15" },
   //   ];
   return (
-    <div>
-      <div className="container mx-auto py-10 p-5 md:p-3">
-        <div>
+    <div className="md:py-20">
+      <div className="container mx-auto py-10 p-5 md:p-3 md:border rounded-lg backdrop-blur-md md:shadow-2xl">
+        <div className="md:p-5">
           <h3 className="text-center font-open-sans text-[28px] font-medium leading-normal max-w-2xl mx-auto">
             Create Account
           </h3>
@@ -63,7 +64,7 @@ const Membership = () => {
           </h1>
         </div>
         <Form form={form} onSubmit={form.handleSubmit(onSubmit)}>
-          <div>
+          <div className="md:p-5">
             <div className="flex justify-center gap-5">
               <div className="mb-4 flex-1">
                 <ReusableInputField
@@ -147,7 +148,7 @@ const Membership = () => {
               <div className="flex flex-col md:flex-row gap-4 mt-6">
                 {/* Promo code card */}
                 <Card className="w-full md:w-1/2">
-                  <CardHeader className="text-sm font-semibold">
+                  <CardHeader className="text-base lg:text-lg font-medium text-neutral-900">
                     Have a Promo Code?
                   </CardHeader>
                   <CardContent className="flex gap-2">
@@ -162,7 +163,7 @@ const Membership = () => {
 
                 {/* Order summary card */}
                 <Card className="w-full md:w-1/2">
-                  <CardHeader className="text-sm font-semibold">
+                  <CardHeader className="text-base lg:text-lg font-medium text-neutral-900">
                     Order Summary
                   </CardHeader>
                   <CardContent>
@@ -198,6 +199,7 @@ const Membership = () => {
                 inputClassName="bg-white border"
                 control={form.control}
                 validation={true}
+                className="py-5"
               />
               <ReusableInputField
                 name="strtaddress"
@@ -222,7 +224,7 @@ const Membership = () => {
                   </FormLabel>
                   <Select>
                     <SelectTrigger className="w-full ">
-                      <SelectValue placeholder="Theme" />
+                      <SelectValue placeholder="country" />
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="light">A</SelectItem>
@@ -244,7 +246,7 @@ const Membership = () => {
                   </FormLabel>
                   <Select>
                     <SelectTrigger className="w-full ">
-                      <SelectValue placeholder="Theme" />
+                      <SelectValue placeholder="State" />
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="light">A</SelectItem>
