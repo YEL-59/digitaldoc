@@ -1,5 +1,6 @@
 import Joinsvg from "@/assets/joinsvg";
 import herobg from "../../../assets/joinbg.png";
+import { Link } from "react-router";
 
 const Joincpt = () => {
   return (
@@ -25,9 +26,12 @@ const Joincpt = () => {
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              <button className="bg-primary hover:bg-blue-700 font-roboto flex gap-2 text-white px-6 py-3 rounded w-full sm:w-auto">
-                Become a Member – Only £34/year <Joinsvg />
-              </button>
+              <Link to="/membership">
+                {" "}
+                <button className="bg-primary hover:bg-blue-700 font-roboto flex gap-2 text-white px-6 py-3 rounded w-full sm:w-auto">
+                  Become a Member – Only £34/year <Joinsvg />
+                </button>
+              </Link>
             </div>
           </div>
         </div>
