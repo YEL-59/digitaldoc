@@ -49,7 +49,7 @@ const Navbar = () => {
           <h2 className="text-white font-roboto text-[12px] font-normal">
             Join CoPT Today and Gain Clients From Around The UK
           </h2>
-          <Link to="why-join-copt">
+          <Link to="why-join-copt cursor-pointer">
             {" "}
             <Button className="bg-[#333] hover:bg-[#333] text-white text-[12px] font-roboto capitalize px-4 py-2">
               Join now

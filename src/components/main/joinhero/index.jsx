@@ -22,7 +22,7 @@ const Joincpt = () => {
               with the UK's leading professional registry
             </p>
             <div
-              className="flex  items-start gap-3 justify-start"
+              className="flex  items-start gap-3 justify-start cursor-pointer"
               data-aos="fade-up"
               data-aos-delay="300"
             >
