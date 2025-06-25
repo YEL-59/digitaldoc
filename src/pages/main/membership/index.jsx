@@ -121,7 +121,7 @@ const Membership = () => {
               </div>
               <div className="flex-1">
                 <ReusableInputField
-                  name="password"
+                  name="Confirm password"
                   label="Password"
                   placeholder="Enter your password"
                   type="password"
