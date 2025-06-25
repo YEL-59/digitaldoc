@@ -6,10 +6,10 @@ const Joincpt = () => {
   return (
     <>
       <div
-        className="bg-cover bg-center   text-white px-4"
+        className="bg-cover bg-center  min-h-screen flex items-center justify-center text-white px-4"
         style={{ backgroundImage: `url(${herobg})` }}
       >
-        <div className="container mx-auto py-20">
+        <div className="container mx-auto  py-20">
           <div
             className=" max-w-4xl w-full border rounded-lg py-10 px-10 backdrop-blur-md "
             data-aos="fade-up"
