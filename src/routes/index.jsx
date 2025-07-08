@@ -1,3 +1,4 @@
+import TrainerProfile from "@/components/main/personaltrainer/trainerprofile";
 import MainLayout from "@/layout";
 import Home from "@/pages/main/home";
 import Join from "@/pages/main/join";
@@ -17,6 +18,10 @@ export const router = createBrowserRouter([
       {
         path: "/membership",
         element: <Membership />,
+      },
+      {
+        path: "profile",
+        element: <TrainerProfile />,
       },
     ],
   },
