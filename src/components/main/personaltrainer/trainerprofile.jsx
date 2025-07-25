@@ -5,7 +5,11 @@ import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { MapPin, Instagram, Youtube, Share2 } from "lucide-react";
 
+import { useLocation } from "react-router";
+
 export default function TrainerProfile() {
+  const location = useLocation();
+  const trainer = location.state?.trainer;
   return (
     <div className="min-h-screen bg-gray-100 py-10 px-4 md:px-10">
       <div className="max-w-5xl mx-auto">
@@ -19,7 +23,7 @@ export default function TrainerProfile() {
                 height={160}
                 className="rounded-xl object-cover shadow-md"
               />
-              <h2 className="text-xl font-semibold mt-4">Liam Dewhurst</h2>
+              <h2 className="text-xl font-semibold mt-4">{trainer.name}</h2>
               <p className="text-gray-500">Tunbridge Wells, Kent</p>
               <Button className="mt-4">Contact Me</Button>
             </div>

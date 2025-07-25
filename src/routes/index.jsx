@@ -20,7 +20,7 @@ export const router = createBrowserRouter([
         element: <Membership />,
       },
       {
-        path: "profile",
+        path: "/trainer/:name",
         element: <TrainerProfile />,
       },
     ],
