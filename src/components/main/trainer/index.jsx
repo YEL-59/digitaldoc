@@ -13,30 +13,31 @@ const Trainer = () => {
             {/* First paragraph */}
             <div className="max-w-4xl mx-auto">
               <p className="text-[#5C5C5C] text-center font-roboto text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-normal">
-                Need help finding a Personal Trainer? You can find the qualified
-                Personal Trainers on CoPT. Start your search and get free quotes
-                now from PTs in your area!
+                Looking for a Personal Trainer Near You? Find qualified and
+                experienced Personal Trainers quickly and easily on CoPT.
+                Whether you're looking to lose weight, build muscle, or improve
+                your overall fitness, we’ll help you connect with the right
+                trainer for your goals.
               </p>
             </div>
 
             {/* Second paragraph */}
             <div className="max-w-5xl mx-auto">
               <p className="text-[#5C5C5C] text-center font-roboto text-[16px] sm:text-[18px] md:text-[20px] font-normal leading-normal">
-                Need help finding a Personal Trainer? You can find the qualified
-                Personal Trainers on CoPT. Start your search and get free quotes
-                now from PTs in your area! If it is your time looking for a
-                Personal Trainer and not sure where to start? Tell us about your
-                goals and we’ll send you a list of Personal Trainers to review.
-                There’s no pressure to hire, so you can compare profiles, read
-                previous reviews and ask for more information before you make
-                your decision. Best of all - it’s completely free!
+                Get Free Quotes from Local Personal Trainers Searching for a
+                personal trainer for the first time? Not sure where to begin?
+                Just tell us your fitness goals, and we’ll match you with
+                qualified personal trainers in your area. Compare profiles, read
+                real reviews, and contact trainers directly. There’s no
+                obligation to hire, so you can make an informed choice before
+                committing.
               </p>
             </div>
 
             {/* Third paragraph */}
             <div>
               <p className="text-primary font-roboto text-[16px] sm:text-[18px] md:text-[20px] font-bold leading-normal text-center">
-                Best of all - it’s completely free!
+                Start your fitness journey today on CoPT!
               </p>
             </div>
 

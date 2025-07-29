@@ -62,7 +62,7 @@ export default function PersonalTrainerGrid() {
                   <img
                     src={trainer.image}
                     alt={trainer.name}
-                    className="object-cover rounded-lg h-[172px] w-[150px] sm:h-[172px] sm:w-[150px]"
+                    className="object-cover rounded-lg md:h-[172px] md:w-[150px] sm:h-full sm:w-full"
                   />
                   <p
                     className="font-semibold text-sm text-gray-800 mt-2 px-3 py-1 rounded inline-block"
@@ -87,6 +87,9 @@ export default function PersonalTrainerGrid() {
                     <p className="text-[#0053CF] font-dosis text-xl font-bold">
                       Per hour {trainer.rate}
                     </p>
+                    <Button className="mt-4 bg-primary hover:bg-blue-700 text-white font-roboto text-[16px] font-normal leading-normal w-full">
+                      View Profile
+                    </Button>
                   </div>
                 </div>
               </div>

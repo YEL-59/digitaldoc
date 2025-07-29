@@ -8,9 +8,9 @@ export default function TrainerProfile() {
   const location = useLocation();
   const trainer = location.state?.trainer;
   return (
-    <div className="min-h-screen bg-gray-100 py-10 px-4 md:px-10">
-      <div className="container flex gap-5  mx-auto">
-        <Card className="p-6 flex-1/3">
+    <div className="min-h-screen bg-gray-100 py-10 px-2 md:px-10">
+      <div className="container flex flex-col md:flex-row gap-5  mx-auto">
+        <Card className="md:p-6 flex-1/3">
           <div className="flex flex-col md:flex-row items-center gap-6 p-4">
             <div className="flex flex-col items-center p-4">
               <img
@@ -127,11 +127,11 @@ export default function TrainerProfile() {
             </CardContent>
           </div> */}
         </Card>
-        <Card className="p-6 flex-1">
-          <div className="flex flex-col md:flex-row items-center gap-6 p-4">
-            <div className="flex-1">
+        <Card className="md:p-6 flex-1">
+          <div className="flex flex-col md:flex-row items-center gap-6 md:p-4">
+            <div className="flex-1 w-full p-2">
               {/* <h2 className="text-xl font-semibold mb-4">Contact Form</h2> */}
-              <form className="space-y-4">
+              <form className="space-y-2 w-full">
                 <label className="block text-sm font-medium text-gray-700">
                   Your Name
                 </label>
